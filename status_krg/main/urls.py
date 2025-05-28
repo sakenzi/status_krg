@@ -9,5 +9,6 @@ urlpatterns = [
     path('repair/', RepairView.as_view(), name='repair'),
     path('certificate/', CertificateView.as_view(), name='certificate'),
     path('project/', ProjectView.as_view(), name='project'),
-    path('feed_back/', FeedbackView.as_view(), name='feed-back')
+    path('feed_back/', FeedbackView.as_view(), name='feed-back'),
+    path('link/', LinkView.as_view(), name='link'),
 ]

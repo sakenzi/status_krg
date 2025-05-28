@@ -40,3 +40,11 @@ class FeedBack(models.Model):
     email = models.EmailField(null=True)
     address = models.TextField(null=True)
     message = models.TextField(null=True)
+
+
+class Link(models.Model):
+    whatsapp_link = models.TextField(null=True)
+    instagram_link = models.TextField(null=True)
+    facebook_link = models.TextField(null=True)
+    vk_link = models.TextField(null=True)
+    

@@ -42,3 +42,9 @@ class FeedBackSerializer(ModelSerializer):
     class Meta:
         model = FeedBack
         fields = ('name', 'email', 'address', 'message')
+
+
+class LinkSerializer(ModelSerializer):
+    class Meta:
+        model = Link
+        fields = ('whatsapp_link', 'instagram_link', 'facebook_link', 'vk_link')

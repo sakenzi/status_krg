@@ -30,6 +30,10 @@ class FeedBackAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'address', 'message')
 
 
+class LinkAdmin(admin.ModelAdmin):
+    list_display = ('whatsapp_link', 'instagram_link', 'facebook_link', 'vk_link')
+
+
 admin.site.register(Information, InformationAdmin)
 admin.site.register(TypeActivity)
 admin.site.register(Activity, ActivityAdmin)
@@ -37,3 +41,4 @@ admin.site.register(Repair, RepairAdmin)
 admin.site.register(Certificate)
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(FeedBack, FeedBackAdmin)
+admin.site.register(Link, LinkAdmin)

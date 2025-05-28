@@ -97,3 +97,15 @@ class FeedbackView(generics.ListCreateAPIView):
             feed_back = serializer.save()
             return Response(self.serializer_class(feed_back).data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+
+class LinkView(generics.ListAPIView):
+    
+    @swagger_auto_schema(
+        operation_description="Получение ссылок",
+        responses={200: LinkSerializer(many=True)}
+    )
+    def get(self, request):
+        link = Link.objects.all()
+        serializer = LinkSerializer(link, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK) 
