@@ -20,17 +20,17 @@ class Activity(models.Model):
 
 
 class Repair(models.Model):
-    photo = models.FileField(null=True, upload_to='uploads')
+    photo = models.FileField(null=True, upload_to='')
     title = models.TextField(null=True)
     description = models.TextField(null=True)
 
 
 class Certificate(models.Model):
-    photo = models.FileField(null=True, upload_to='uploads')
+    photo = models.FileField(null=True, upload_to='')
 
 
 class Project(models.Model):
-    photo = models.FileField(null=True, upload_to='uploads')
+    photo = models.FileField(null=True, upload_to='')
     title = models.TextField(null=True)
     description = models.TextField(null=True)
 
