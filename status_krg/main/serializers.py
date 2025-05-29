@@ -41,7 +41,7 @@ class ProjectSerialiazer(ModelSerializer):
 class FeedBackSerializer(ModelSerializer):
     class Meta:
         model = FeedBack
-        fields = ('name', 'email', 'address', 'message')
+        fields = ('name', 'email', 'title', 'message')
 
 
 class LinkSerializer(ModelSerializer):

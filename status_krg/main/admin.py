@@ -27,7 +27,7 @@ class ProjectAdmin(admin.ModelAdmin):
 
 
 class FeedBackAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'address', 'message')
+    list_display = ('name', 'email', 'title', 'message')
 
 
 class LinkAdmin(admin.ModelAdmin):

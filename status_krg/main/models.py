@@ -38,7 +38,7 @@ class Project(models.Model):
 class FeedBack(models.Model):
     name = models.CharField(max_length=150, null=True)
     email = models.EmailField(null=True)
-    address = models.TextField(null=True)
+    title = models.TextField(null=True)
     message = models.TextField(null=True)
 
 
